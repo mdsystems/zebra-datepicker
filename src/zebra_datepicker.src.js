@@ -1163,7 +1163,8 @@
 
                             // if parent element has its "display" property set to "block"
                             // the wrapper has to have its "width" set
-                            if ($element.css('display') === 'block') icon_wrapper.css('width', $element.outerWidth(true));
+                            // MDS - For the time being, remove next line as this sets the element to 0 width in Firefox with Bootstrap.
+                            // if ($element.css('display') === 'block') icon_wrapper.css('width', $element.outerWidth(true));
 
                             // put wrapper around the element
                             // also, reset the target element's positioning properties
@@ -1760,7 +1761,10 @@
                             ) &&
 
                             // and the click is not inside the calendar
-                            $(e.target).closest('.Zebra_DatePicker').length === 0
+                            $(e.target).closest('.Zebra_DatePicker').length === 0 &&
+
+                            // and the click is not on a time control element
+                            !$(e.target).hasClass('dp_time_control')
 
                         // hide the date picker
                         ) plugin.hide(true);

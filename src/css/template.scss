@@ -213,7 +213,7 @@
 
     .dp_icon {
         height: 16px;
-        background-image: url('icons.png');
+        background-image: url('images/datePickerIcons.png');
         background-repeat: no-repeat;
         text-indent: -9999px;
         *text-indent: 0; // for IE6 & 7
@@ -233,7 +233,7 @@
 }
 
 button.Zebra_DatePicker_Icon {
-    background: url('icons.png') no-repeat center top;
+    background: url('images/datePickerIcons.png') no-repeat center top;
     border: none;
     cursor: pointer;
     display: block;
