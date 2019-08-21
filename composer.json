@@ -1,5 +1,5 @@
 {
-    "name": "mdsystems/zebra_datepicker",
+    "name": "mdsystems/zebra-datepicker",
     "description": "Forked version of Zebra_Datepicker from https://stefangabos.github.io/Zebra_Datepicker/",
     "type": "library",
     "require": {
